@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mazo</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+    .image-container {
+  display: flex;
+  /* Optional: adds space between images */
+  justify-content: space-around; 
+}
+
+.image-container img {
+  /* Optional: ensures images fit within their container */
+  max-width: 100%; 
+  height: auto; /* Maintains aspect ratio */
+  margin: 10px;
+  padding: 20px;
+}
+  img { image-rendering: pixelated; }
+.card {
+    width: 150px;
+    height: 254.19px;
+    perspective: 1000px;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.card-img-back {
+    transform: rotateY(180deg);
+}
+
+.flipped .card-img-front {
+    transform: rotateY(180deg);
+}
+
+.flipped .card-img-back {
+    transform: rotateY(0deg);
+}
+</style>
+</head>
+<body>
+ <p>Hola! Este es mi mazo principal, es el Mazo de Cartas de Amy Rose. Aquí puedes ver las cartas más a detalle (Cortesía de Sonic Argentina!):</p>
+ <br>
+ <!-- ARCANOS /I -->
+ <h1>Arcanos</h1>
+ <div class="image-container">
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/00.%20El%20Loco.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/01.%20El%20Mago.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/02.%20La%20Sacerdotisa.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/03.%20La%20Emperatriz.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/04.%20El%20Emperador.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/05.%20El%20Hierofante.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/06.%20Los%20Enamorados.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/07.%20El%20Carro.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/08.%20La%20Fuerza.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/09.%20El%20Ermitaño.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/10.%20La%20Rueda%20de%20la%20Fortuna.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+</div>
+<div class="image-container">
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/11.%20La%20Justicia.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/12.%20El%20Colgado.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/13.%20La%20Muerte.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/14.%20La%20Templanza.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/15.%20El%20Diablo.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/16.%20La%20Torre.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/17.%20La%20Estrella.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/18.%20La%20Luna.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/19.%20El%20Sol.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/20.%20El%20Juicio.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/21.%20El%20Mundo.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+</div>
+<!-- ARCANOS /F -->
+<h1>Bastos</h1>
+ <div class="image-container">
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A00.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A02.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A03.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A04.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A05.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A06.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A07.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+</div>
+
+<div class="image-container">
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A08.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A09.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A10.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A11.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A12.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A13.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A14.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+</div>
+<br><br>
+<h1>Copas</h1>
+ <div class="image-container">
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B01.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B02.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B03.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B04.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B05.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B06.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B07.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+</div>
+
+<div class="image-container">
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B08.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B09.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B10.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B11.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B12.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B13.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B14.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+</div>
+<br><br>
+<h1>Espadas</h1>
+ <div class="image-container">
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C01.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C02.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C03.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C04.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C05.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C06.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C07.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+</div>
+
+<div class="image-container">
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C08.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C09.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C10.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C11.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C12.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C13.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C14.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+</div>
+
+<br><br>
+<h1>Copas</h1>
+ <div class="image-container">
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B01.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B02.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B03.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B04.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B05.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B06.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B07.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+</div>
+
+<div class="image-container">
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B08.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B09.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B10.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B11.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B12.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B13.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B14.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+</div>
+<br><br>
+<h1>Pentáculos</h1>
+ <div class="image-container">
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/D01.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/D02.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/D03.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/D04.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/D05.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/D06.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/D07.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+</div>
+
+<div class="image-container">
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/D08.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/D09.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/D10.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/D11.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/D12.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/D13.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onmouseenter="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/D14.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+</div>
+  </body>
+</html>

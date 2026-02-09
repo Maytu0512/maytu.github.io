@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiradas</title>
+    <link href="https://maytu.neocities.org/tarot/style.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+      img { image-rendering: pixelated; }
+       .image-container {
+  display: flex;
+  /* Optional: adds space between images */
+  justify-content: space-around; 
+}
+
+.image-container img {
+  /* Optional: ensures images fit within their container */
+  max-width: 100%; 
+  height: auto; /* Maintains aspect ratio */
+  margin: 10px;
+  padding: 20px;
+}
+      body { 
+      color: #fff; 
+      }
+      #wipe span {
+      display: inline-block;
+      transition: transform 0.3s ease-out,
+      opacity 0.3s ease-out,
+      filter 0.3s ease-out,
+      color 0.3s ease-out,
+      text-shadow 0.3s ease-out;
+      }
+      .card {
+      width: 150px;
+      height: 254.19px;
+      perspective: 1000px;
+      margin: 30px auto;
+      position: relative;
+      }
+      .card-img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      transition: transform 0.5s;
+      }
+      .card-img-back {
+      transform: rotateY(180deg);
+      }
+      .flipped .card-img-front {
+      transform: rotateY(180deg);
+      }
+      .flipped .card-img-back {
+      transform: rotateY(0deg);
+      }
+      .rotate-90 {
+      width: 150px;
+      height: 254.19px;
+      transform: rotate(0.5turn);
+      }
+    </style>
+  </head>
+  <body>
+      <h1>20260209<span class="wipe">: ¿Qué opina A. E. sobre mí?</span></h1>
+    <div class="image-container">
+<div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img class="rotate-90" src="https://maytu.neocities.org/tarot/mazo/09.%20El%20Ermitaño.webp" alt="B10" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img class="rotate-90" src="https://maytu.neocities.org/tarot/mazo/D13.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/C04.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+</div>
+
+    <h1>20260209<span class="wipe">: ¿Cómo va a desenvolverse la Mesa Directiva 2026?</span></h1>
+    <div class="image-container">
+<div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img class="rotate-90" src="https://maytu.neocities.org/tarot/mazo/B10.webp" alt="B10" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/A07.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+<div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card-img card-img-front">
+        <img src="https://maytu.neocities.org/tarot/mazo/back.webp" alt="Front of card" width=150 height=254.19>
+    </div>
+    <div class="card-img card-img-back">
+        <img src="https://maytu.neocities.org/tarot/mazo/B05.webp" alt="Back of card" width=150 height=254.19>
+    </div>
+</div>
+</div>
+    
+    <script>
+const spellChars = ["✦","✧","✺","✴","✹"];
+const fgcolour = "#6600cc";  // glow color
+const glcolour = "#cc99ff";  // glow shadow
+const speed = 05;
+
+// Select all elements with class 'wipe'
+const wipeElements = document.querySelectorAll(".wipe");
+
+wipeElements.forEach(wipeEl => {
+  const text = wipeEl.textContent;
+  wipeEl.textContent = "";
+
+  const letters = [];
+
+  // Create span for each letter
+  for (let i = 0; i < text.length; i++) {
+    const span = document.createElement("span");
+    span.textContent = text[i];
+    span.style.color = "#fff";
+    span.style.opacity = 1;
+    span.style.transition = "transform 0.3s ease-out, opacity 0.3s ease-out";
+    wipeEl.appendChild(span);
+    letters.push({el: span});
+  }
+
+  // Animate all letters together
+  function animateAll() {
+    let opacity = 1;
+    let translateY = 0;
+    let angle = 0;
+
+    function step() {
+      if (opacity <= 0) {
+        wipeEl.style.display = "none"; // hide completely when done
+        return;
+      }
+
+      // 20% chance to replace all letters with magical glyphs
+      letters.forEach(letter => {
+        if (Math.random() < 0.2) {
+          letter.el.textContent = spellChars[Math.floor(Math.random() * spellChars.length)];
+          letter.el.style.color = fgcolour;
+          letter.el.style.textShadow = glcolour + " 0px 0px 5px";
+        } else {
+          letter.el.style.color = "#fff";
+          letter.el.style.textShadow = "none";
+          letter.el.textContent = text[letters.indexOf(letter)];
+        }
+      });
+
+      // Apply transform & fade to entire element
+      translateY -= 2;
+      angle += 5;
+      opacity -= 0.02;
+
+      wipeEl.style.transform = `translateY(${translateY}px) rotate(${angle}deg) scale(0.8)`;
+      wipeEl.style.opacity = opacity;
+      wipeEl.style.filter = "blur(5px)";
+
+      requestAnimationFrame(step);
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  // Start animation after short delay
+  setTimeout(animateAll, 13);
+});
+</script>
+  </body>

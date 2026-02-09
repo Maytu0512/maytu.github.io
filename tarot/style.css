@@ -1,0 +1,126 @@
+body {
+	background-color: #080808;
+	color: #e9d479;
+		font-family: "Space Mono", monospace;
+		font-weight: normal;
+		font-style: normal;
+		font-size: 12px;
+		margin: 0;
+		padding: 0;
+		background-attachment: fixed;
+		background-size: auto;
+		background-image: url('https://assets.zyrosite.com/dWxMkpLVWVSpJaRL/8b_web_star_field_loop-15fps-1280px-brighter---fav-A3QpnPnLW5tVrg17.gif');
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: #B0B4E8;
+}
+
+p {
+	color: #FFFFFF;
+}
+
+.sidebar {
+    width: 225px;
+    min-height: 100%;
+    border-right: 1px dotted #B0B4E8;
+    padding: 2rem 2rem;
+    position: absolute;
+    overflow: auto;
+}
+
+.post-list a {
+	display: block;
+	text-decoration: none;
+}
+
+.post-list a:before {
+	content: "\00b7";
+	margin-left: -12px;
+	width: 14px;
+	display: inline-block;
+}
+
+.title {
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: 4px;
+	font-variant: small-caps;
+}
+
+.subtitle {
+	margin-bottom: 24px;
+	font-style: italic;
+}
+
+.profile img {
+	border: 1px solid #B0B4E8;
+	display: inline;
+	float: left;
+	margin-bottom: 12px;
+	margin-right: 6px;
+}
+
+.profile .profile-desc {
+	display: inline;
+}
+
+.profile {
+	border: 1px solid #B0B4E8;
+	padding: 12px;
+	border-top: 8px solid #B0B4E8;
+	min-height: 60px;
+}
+
+
+.menu a {
+	border: 1px dotted #B0B4E8;
+	text-decoration: none;
+	padding: 3px;
+	display: inline-block;
+	margin-bottom: 6px;
+}
+
+.menu a:hover {
+	font-weight: bold;
+}
+
+.sidebar a:hover {
+	text-decoration: underline;
+}
+
+iframe {
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+
+.main {
+    position: absolute;
+    height: 100vh;
+    width: calc(100% - 316px);
+    margin-left: 316px;
+    box-sizing: border-box;
+}
+
+.page {
+	padding: 24px;
+	padding-right: 40vw;
+}
+
+html, body {
+    scrollbar-width: thin; 
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+h1 {
+	font-variant: small-caps;
+	border-bottom: 1px dashed;
+}

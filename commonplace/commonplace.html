@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>commonplace</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="icon.png"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:title" content="system7.css"/>
+    <meta name="Description" content="A design system for building retro Apple interfaces"/>
+    <meta property="og:description" content="A design system for building retro Apple interfaces"/>
+    <!--<link rel="stylesheet" href="system7.css">-->
+    <link rel="stylesheet" href="https://raw.githack.com/opencoca/system7.css/main/style.css">
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="docs.css">
+    <style>
+    img { image-rendering: pixelated; }
+      body {
+      max-width: 100%;
+      width: 900px;
+      margin: 0 auto;
+      padding: 1rem calc(2rem + 1vw); 
+      background-image: url('backround.png');
+      background-repeat: repeat;
+      background-size: 100% 100%;
+      background-size: cover
+      }
+      .title-bar {
+      display: flex;
+      height: auto;
+      background: linear-gradient(var(--primary) 50%, transparent 50%);
+      background-size: 6.6666666667% 13.3333333333%;
+      background-clip: content-box;
+      }
+      .filter-item {
+      display: none;
+      }
+      .filter-item.show {
+      display: block;
+      }
+    </style>
+  </head>
+  <body ontouchstart>
+    <div class="container">
+    <div class="layout">
+    <p class="col col-main">
+    <aside class="window sidebar">
+      <div class="inactive-title-bar">
+        <h1 class="title">Nav</h1>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>This is a copy from my personal notebook. <b>Trigger Warnings y Spoilers!</b></p>
+        <ul class="menu-items">
+          <li><a href="https://maytu.neocities.org">Inicio</a></li>
+          <li><a href="https://maytu.bearblog.dev">blog</a></li>
+        </ul>
+        <div id="myBtnContainer"> <button class="btn active" onclick="filterSelection('all')"> Todos</button> <button class="btn" onclick="filterSelection('antiintelectualismo')"> Antiintelectualismo</button> <button class="btn" onclick="filterSelection('capitalismo')"> Capitalismo</button> <button class="btn" onclick="filterSelection('fan-fics')"> Fan-fics</button> <button class="btn" onclick="filterSelection('feminismo')"> Feminismo</button><button class="btn" onclick="filterSelection('masculinidades')"> Masculinidades</button> <button class="btn" onclick="filterSelection('poesía')"> Poesía</button> <button class="btn" onclick="filterSelection('política')"> Política</button></div>
+      </div>
+    </aside>
+    <!--ENTRIES-->
+    <div class="window filter-item política">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title"><a href="https://nymag.com/intelligencer/article/minneapolis-vs-donald-trump-ice-invasion.html">Kerry Howley, 2026, Your Friendly Neighborhood Resistance On the ground in Minneapolis, watching out for ICE at every corner, crosswalk, church, and school.</a></h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>“I am Puerto Rican,” she says. “I send my kids with their passports to school. I’m having conversations with them about safety: <i>Am I safe at school?</i> A week ago we had an incident where there was a school bus with the STOP sign open and kids were getting on the bus and it was surrounded by ICE agents. And this is 7:20 in the morning and — just — you get that fight-or-flight response.” At first her 9-year-old was carrying her passport in her backpack; now it’s in her back pocket. “I have to prepare them for it if they get stopped,” she says. “I said, <i>Do not engage. This is not the time to be cussing at anyone</i>. But she said, <i>Mom, if I create enough noise, my friends can get away</i>.”</p>
+      </div>
+      </div>
+    <div class="window filter-item política">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Levítico 19:33-34</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>Cuando el extranjero habite con vosotros en vuestra tierra, no lo oprimiréis. Como a uno de vosotros trataréis al extranjero que habite entre vosotros, y lo amarás como a ti mismo, porque extranjeros fuisteis en la tierra de Egipto. Yo, Jehová, vuestro Dios.</p>
+      </div>
+      </div>
+    <div class="window filter-item política">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Malcolm X, 1963, Message to the Grass Roots</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>It's just like when you've got some coffee that's too black, which means it's too strong. What do you do? You integrate it with cream, you make it weak. But if you pour too much cream in it, you won't even know you ever had coffee. It used to be hot, it becomes cool. It used to be strong, it becomes weak. It used to wake you up, now it puts you to sleep.</p>
+      </div>
+      </div>
+    <div class="window filter-item política">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title"><a href="https://x.com/amandalitman/status/2015162412119236847">amandalitman, 2026</a></h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>A mom who wrote poems, a preschooler with a Spider-Man backpack , a nurse who cared for veterans — these are the people they’re afraid of.</p>
+      </div>
+      </div>
+    <div class="window filter-item fan-fics">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title"><a href="https://archiveofourown.org/works/64162696">m7udo, 2025, The Pursuit of Truth: A Prosecutor’s Pragma</a></h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>If it cost him his reputation, so be it. If it branded him a traitor to the prosecutors' office, he would bear it. He would speak the truth. He would not be silent.</p>
+        <p>(...)</p>
+        <p>"That is the fundamental difference between you and I," Edgeworth said. "I would rather starve with my father's integrity than feast on your corruption."</p>
+      </div>
+    </div>
+    <div class="window filter-item política">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Rom Karl Stojka</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>And people did this, just like you, you and me. These people did not come from another planet. [...] They were human beings, just like us. And it was not Hitler who arrested me, not Goering, not Goebbels. The grocer, the janitor, the tailor, the shoemaker, the baker, they suddenly got a uniform, a swastika armband, and there they were, the master race...</p>
+      </div>
+      </div>
+    <div class="window filter-item política">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title"><a href="https://lpderecho.pe/la-bajada-de-reyes-de-tomas/">Jara, 2025</a></h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>La televisión que desinforma no describe hechos, agrede, castiga adversarios. Ataca al político incómodo, al fiscal tenaz, al periodista independiente y a cualquier funcionario o ciudadano que cruce los intereses del dueño, de los conductores, de los financistas o del cliente que ha pedido un “servicio”.</p>
+        <p>(...)</p>
+        <p>Ningún programa de desinformación sobrevive sin un villano. Lo necesitan como el adicto necesita su dosis. Lo esencial es mostrar uno o varios rostros para convertirlos en responsables de todo lo que indigna, preocupa o irrita a la audiencia. A veces el villano es real y cuando no hay uno a mano, se exagera o se inventa.</p>
+      </div>
+      </div>
+    <div class="window filter-item política">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title"><a href="https://lpderecho.pe/la-bajada-de-reyes-de-tomas/">José Domingo Pérez, 2026, La bajada de reyes de Tomás</a></h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>Sin embargo, la magnitud de las revelaciones y las investigaciones del Equipo Especial Lava Jato convergieron, dando lugar a lo inimaginable, los adversarios políticos de antaño —y sus herederos— se unieron bajo un mismo propósito: tumbarse el caso Lava Jato y, de este modo, restituir el menoscabado privilegio de la impunidad para los políticos y grandes empresarios.</p>
+      </div>
+      </div>
+    <div class="window filter-item capitalismo">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Marion Stokes</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>Those in power are able to write their own history.</p>
+      </div>
+    </div>
+    <div class="window filter-item fan-fics">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title"><a href="https://archiveofourown.org/works/38265169">Mikomikono, 2022, Dating for a Turnabout</a></h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>It's a fragile thing, a human life.</p>
+      </div>
+      </div>
+    <div class="window filter-item fan-fics">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title"><a href="https://archiveofourown.org/works/64798447">Box_o_Ritz_Crackers, 2025, Look Alive Phoenix, Your Heels Are Dragging</a></h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>Here, in this stupid, limonal place between states of being, it felt like everything was hurting extra. How odd it is to crave life after wanting to be dead for so long. How odd is it to learn that everything you regret in life shouldn’t be regretted at all.</p>
+        <p>(...)</p>
+        <p>This was the worst life he could have chosen, but it was life nonetheless.</p>
+        <p>(...)</p>
+        <p>You should show him a body massacred with bullet wounds, or the aftermath of a stabbing and he’d be able to keep his cool. He had to. That was his job. But this wasn’t. Almost losing a friend in such a terrible way was <i>not</i> part of this job.</p>
+        <p>(...)</p>
+        <p>And maybe… maybe that was what family is. It’s <i>knowing</i> that you don’t know what to do, but you keep moving forward. You keep changing for the better, but keep staying around for the worst parts of it.</p>
+        <p>(...)</p>
+        <p>What mattered was that he was here, present in this moment, and exactly where he needed to be. Alive, striving for happiness, and more comfortable than he had been in years.</p>
+      </div>
+    </div>
+    <div class="window filter-item feminismo">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title"><a href="https://www.instagram.com/p/DPzkAmOjn5l/">radsadfem, 2017</a></h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>If a woman stops wearing makeup, colouring her hair, dieting, or dressing up, everyone says she’s letting herself go. If you’re a woman, just existing in your natural form is considered a failure and is constantly belittled.</p>
+      </div>
+    </div>
+    <div class="window filter-item capitalismo">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Karl Marx, 1897, El Capital. Tomo I, pp. 443</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>En la sociedad capitalista, si una clase goza de tiempo libre es a costa de convertir la vida de toda de las masas en tiempo de trabajo.</p>
+      </div>
+    </div>
+    <div class="window filter-item fan-fics">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title"><a href="https://archiveofourown.org/works/64151182">realizationtime, 2025, In Commemoration of the Conquest of the Air</a></h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p><i>“‘Put up’?” Dad repeats, scandalized. “I did not ‘put up’ with you, Miles. I wept with joy and shouted it from the rooftops if you so much as breathed a little loud, because it meant you were alive.” He hugs Miles close, swaying and rocking with the force of it. “You! This perfect, beautiful soul your mother and I brought into this world! Breathing and crying and existing! How lucky was I to be roused from sleep because you demanded to be heard? To be seen?”</i></p>
+        <p>(...)</p>
+        <p><i>“But sometimes, when you love someone, you make silly sacrifices like that because you know it will make them happy.”</i></p>
+      </div>
+    </div>
+    <div class="window filter-item masculinidades">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Marilyn Frye, 1983, The Politics of Reality</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>To say that straight men are heterosexual is only to say that they engage in sex (fucking exclusively with the other sex, i.e., women). All or almost all of that which pertains to love, most straight men reserve exclusively for other men. The people whom they admire, respect, adore, revere, honor, whom they imitate, idolize, and form profound attachments to, whom they are willing to teach and from whom they are willing to learn, and whose respect, admiration, recognition, honor, reverence and love they desire… those are, overwhelmingly, other men. In their relations with women, what passes for respect is kindness, generosity or paternalism; what passes for honor is removal to the pedestal. From women they want devotion, service and sex.</p>
+        <p>Heterosexual male culture is homoerotic; it is man-loving.</p>
+      </div>
+    </div>
+    <div class="window filter-item antiintelectualismo">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Isaac Asimov, 1980</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>Existe un culto a la ignorancia. La presión del antiintelectualismo ha ido abriéndose paso a través de nuestra vida política y cultural, alimentada por la falsa noción de que democracia significa “mi ignorancia es tan válida como tu conocimiento"</p>
+      </div>
+    </div>
+    <div class="window filter-item poesía">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title"><a href="https://www.instagram.com/p/C0KS1MBPOCO/">Margaux Paul, 2023, I Hope you Get Home Safe</a></h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <p>Suddenly it's December</p>
+        <p>And you're not 17 anymore.</p>
+        <p>And you haven't been 17 for a very long time,</p>
+        <p>but sometimes you need to remind yourself.</p>
+        <br>
+        <p>You're driving home, at 1 a.m.</p>
+        <p>from a bar yoy drank responsibly at</p>
+        <p>because you no longer have to get drunk to be honest</p>
+        <p>with yourself about what you want.</p>
+        <br>
+        <p>You're driving home, at 1 a.m.</p>
+        <p>and your parents aren't waiting up for you.</p>
+        <p>And they haven't been waiting up for you for a very long time.</p>
+        <br>
+        <p>But sometimes you need to remind yourself</p>
+        <br>
+        <p>You're listening to songs that make you sad because</p>
+        <p>they remind you of <i>back then</i>, instead of</p>
+        <p><i>right now</i>.</p>
+        <br>
+        <p>It's December and the streets are foggy.</p>
+        <p>You never left your hometown because the sadness followed you</p>
+        <p>wherever you went</p>
+        <p>so you figured you might as well hunker down with it</p>
+        <br>
+        <p>The drive is familiar but at one point it wasn't.</p>
+        <p>Remember?</p>
+        <p>It wasn't</p>
+        <br>
+        <p>You've come so far since then.</p>
+        <p>And I hope you get home safe.</p>
+      </div>
+    </div>
+    <script>
+      function filterSelection(category) {
+        const items = document.getElementsByClassName("filter-item");
+        if (category === "all") category = "";
+      
+        for (let i = 0; i < items.length; i++) {
+          items[i].classList.remove("show");
+          if (items[i].className.indexOf(category) > -1) {
+            items[i].classList.add("show");
+          }
+        }
+      }
+      
+      const btnContainer = document.getElementById("myBtnContainer");
+      const btns = btnContainer.getElementsByClassName("btn");
+      
+      for (let i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          const current = btnContainer.getElementsByClassName("active");
+          if (current.length > 0) current[0].classList.remove("active");
+          this.classList.add("active");
+        });
+      }
+      
+      filterSelection("all");
+    </script>
+  </body>
+</html>
